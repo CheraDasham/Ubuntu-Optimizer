@@ -75,4 +75,4 @@ Reboot at the end.
 bash <(curl -s https://github.com/CheraDasham/Ubuntu-Optimize/raw/main/ubuntu-optimizer.sh)
 ```
 
-You can pm me in telram: @Chera_Dasham
+You can pm me in telegram: @Chera_Dasham
