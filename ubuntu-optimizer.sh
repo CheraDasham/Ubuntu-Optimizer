@@ -51,7 +51,7 @@ set_timezone() {
   timedatectl set-timezone Asia/Tehran
 
   echo 
-  echo "$(tput setaf 2)----- TimeZone set to Asia/Tehran.$(tput sgr0)"
+  echo "$(tput setaf 2)----- TimeZone set to Asia/Tehran. Say Hellp To Legenderyking$(tput sgr0)"
   echo
   sleep 0.5
 }
@@ -72,7 +72,7 @@ fix_dns() {
   echo 'nameserver 8.8.4.4' >> $DNS_PATH
   
   echo 
-  echo "$(tput setaf 2)----- System DNS Optimized.$(tput sgr0)"
+  echo "$(tput setaf 2)----- System DNS Optimized. Done! Legenderyking$(tput sgr0)"
   echo
   sleep 1
 }
@@ -91,7 +91,7 @@ complete_update() {
   sudo apt -y autoclean
   sudo apt -y clean
   echo 
-  echo "$(tput setaf 2)----- System Updated Successfully.$(tput sgr0)"
+  echo "$(tput setaf 2)----- System Updated Successfully. It's Legenderyking Here$(tput sgr0)"
   echo 
   sleep 1
 }
@@ -113,7 +113,7 @@ installations() {
   sudo apt -y install binutils make automake autoconf libtool
   sleep 0.5
   echo 
-  echo "$(tput setaf 2)----- Useful Packages Installed Succesfully.$(tput sgr0)"
+  echo "$(tput setaf 2)----- Useful Packages Installed Succesfully. I think your server hard will be full$(tput sgr0)"
   echo 
   sleep 0.5
 }
@@ -123,7 +123,7 @@ installations() {
 enable_packages() {
   sudo systemctl enable preload haveged cron
   echo 
-  echo "$(tput setaf 2)----- Packages Enabled Succesfully.$(tput sgr0)"
+  echo "$(tput setaf 2)----- Packages Enabled Succesfully. Hey, I'm Here$(tput sgr0)"
   echo
   sleep 0.5
 }
@@ -149,7 +149,7 @@ swap_maker() {
   sudo swapon $SWAP_PATH                   # Enable swap
   echo "$SWAP_PATH   none    swap    sw    0   0" >> /etc/fstab # Add to fstab
   echo 
-  echo $(tput setaf 2)----- SWAP Created Successfully.$(tput sgr0)
+  echo $(tput setaf 2)----- SWAP Created Successfully. It's Very good for better performance$(tput sgr0)
   echo
   sleep 0.5
   
@@ -238,7 +238,7 @@ sysctl_optimizations() {
 
   sysctl -p
   echo 
-  echo $(tput setaf 2)----- Network is Optimized.$(tput sgr0)
+  echo $(tput setaf 2)----- Network is Optimized. Done!$(tput sgr0)
   echo 
   sleep 0.5
 }
@@ -418,7 +418,7 @@ sleep 0.5
 # Outro
 echo 
 echo $(tput setaf 2)=========================$(tput sgr0)
-echo "$(tput setaf 2)----- Done! Server is Optimized.$(tput sgr0)"
+echo "$(tput setaf 2)----- Done! Server is Optimized PM ME: @Chera_Dasham.$(tput sgr0)"
 echo "$(tput setaf 3)----- Reboot in 5 seconds...$(tput sgr0)"
 echo $(tput setaf 2)=========================$(tput sgr0)
 sudo sleep 5 ; shutdown -r 0
