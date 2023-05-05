@@ -1,5 +1,5 @@
 # Ubuntu-Optimizer Forked By Legenderyking
-# Linux Optimizer
+# Ubuntu Optimizer
 
 ## This Bash script automates the optimization of your Linux server.
 ### It performs the following tasks:
