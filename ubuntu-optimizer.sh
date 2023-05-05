@@ -4,10 +4,10 @@
 # Intro
 echo 
 echo $(tput setaf 2)=======================================================$(tput sgr0)
-echo "$(tput setaf 2)----- This script will automatically Optimize your Ubuntu Server.$(tput sgr0)"
+echo "$(tput setaf 2)----- This script will automatically Optimize your Ubuntu Server Forked By @Chera_Dasham.$(tput sgr0)"
 echo "$(tput setaf 2)----- Tested on Ubuntu 16+ LTS.$(tput sgr0)"
 echo "$(tput setaf 3)----- Root access is required.$(tput sgr0)" 
-echo "$(tput setaf 2)----- Source is @ https://github.com/hawshemi/linux-optimizer$(tput sgr0)" 
+echo "$(tput setaf 2)----- Source is @ https://github.com/CheraDasham/Ubuntu-Optimizer$(tput sgr0)" 
 echo $(tput setaf 2)=======================================================$(tput sgr0)
 echo 
 
@@ -91,7 +91,7 @@ complete_update() {
   sudo apt -y autoclean
   sudo apt -y clean
   echo 
-  echo "$(tput setaf 2)----- System Updated Successfully Say hello To @Chera_Dasham.$(tput sgr0)"
+  echo "$(tput setaf 2)----- System Updated Successfully.$(tput sgr0)"
   echo 
   sleep 1
 }
@@ -149,7 +149,7 @@ swap_maker() {
   sudo swapon $SWAP_PATH                   # Enable swap
   echo "$SWAP_PATH   none    swap    sw    0   0" >> /etc/fstab # Add to fstab
   echo 
-  echo $(tput setaf 2)----- SWAP Created Successfully, Legenderyking.$(tput sgr0)
+  echo $(tput setaf 2)----- SWAP Created Successfully.$(tput sgr0)
   echo
   sleep 0.5
   
@@ -238,7 +238,7 @@ sysctl_optimizations() {
 
   sysctl -p
   echo 
-  echo $(tput setaf 2)----- Network is Optimized, Legenderyking IS ON TOP.$(tput sgr0)
+  echo $(tput setaf 2)----- Network is Optimized.$(tput sgr0)
   echo 
   sleep 0.5
 }
@@ -311,7 +311,7 @@ update_sshd_conf() {
   service ssh restart
 
   echo 
-  echo $(tput setaf 2)----- SSH is Optimized, Make me happy by saying Hello World.$(tput sgr0)
+  echo $(tput setaf 2)----- SSH is Optimized.$(tput sgr0)
   echo 
 }
 
@@ -335,7 +335,7 @@ limits_optimizations() {
 
   sudo sysctl -p
   echo 
-  echo $(tput setaf 2)----- System Limits Optimized, Done!.$(tput sgr0)
+  echo $(tput setaf 2)----- System Limits Optimized.$(tput sgr0)
   echo 
   sleep 0.5
 }
