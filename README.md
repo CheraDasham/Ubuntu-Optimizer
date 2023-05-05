@@ -1,4 +1,4 @@
-# Ubuntu-Optimizer By Legenderyking
+# Ubuntu-Optimizer Forked By Legenderyking
 # Linux Optimizer
 
 ## This Bash script automates the optimization of your Linux server.
@@ -74,3 +74,5 @@ Reboot at the end.
 ```
 bash <(curl -s https://github.com/CheraDasham/Ubuntu-Optimize/raw/main/ubuntu-optimizer.sh)
 ```
+
+You can pm me in telram: @Chera_Dasham
