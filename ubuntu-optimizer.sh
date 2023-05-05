@@ -361,7 +361,6 @@ ufw_optimizations() {
 
   # Change the UFW config to use System config.
   sed -i 's+/etc/ufw/sysctl.conf+/etc/sysctl.conf+gI' /etc/default/ufw
-
   # Reload if running
   ufw reload
   echo 
@@ -374,47 +373,32 @@ ufw_optimizations() {
 # RUN BABY, RUN
 check_if_running_as_root
 sleep 0.5
-
 check_ubuntu
 sleep 0.5
-
 set_timezone
 sleep 0.5
-
 fix_dns
 sleep 0.5
-
 complete_update
 sleep 0.5
-
 installations
 sleep 0.5
-
 enable_packages
 sleep 0.5
-
 swap_maker
 sleep 0.5
-
 remove_old_sysctl
 sleep 0.5
-
 sysctl_optimizations
 sleep 0.5
-
 remove_old_ssh_conf
 sleep 0.5
-
 update_sshd_conf
 sleep 0.5
-
 limits_optimizations
 sleep 1
-
 ufw_optimizations
 sleep 0.5
-
-
 # Outro
 echo 
 echo $(tput setaf 2)=========================$(tput sgr0)
