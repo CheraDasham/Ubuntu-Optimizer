@@ -149,7 +149,7 @@ swap_maker() {
   sudo swapon $SWAP_PATH                   # Enable swap
   echo "$SWAP_PATH   none    swap    sw    0   0" >> /etc/fstab # Add to fstab
   echo 
-  echo $(tput setaf 2)----- SWAP Created Successfully. It's Very good for better performance$(tput sgr0)
+  echo $(tput setaf 2)----- SWAP Created Successfully. It is very good for better performance$(tput sgr0)
   echo
   sleep 0.5
   
@@ -373,32 +373,47 @@ ufw_optimizations() {
 # RUN BABY, RUN
 check_if_running_as_root
 sleep 0.5
+
 check_ubuntu
 sleep 0.5
+
 set_timezone
 sleep 0.5
+
 fix_dns
 sleep 0.5
+
 complete_update
 sleep 0.5
+
 installations
 sleep 0.5
+
 enable_packages
 sleep 0.5
+
 swap_maker
 sleep 0.5
+
 remove_old_sysctl
 sleep 0.5
+
 sysctl_optimizations
 sleep 0.5
+
 remove_old_ssh_conf
 sleep 0.5
+
 update_sshd_conf
 sleep 0.5
+
 limits_optimizations
 sleep 1
+
 ufw_optimizations
 sleep 0.5
+
+
 # Outro
 echo 
 echo $(tput setaf 2)=========================$(tput sgr0)
