@@ -72,7 +72,7 @@ Reboot at the end.
 ## Run
 ### Ubuntu (16+ LTS):
 ```
-bash <(curl -s https://github.com/CheraDasham/Ubuntu-Optimizer/raw/main/ubuntu-optimizer.sh)
+bash <(curl -s [https://github.com/CheraDasham/Ubuntu-Optimizer/raw/main/ubuntu-optimizer.sh](https://raw.githubusercontent.com/CheraDasham/Ubuntu-Optimizer/main/ubuntu-optimizer.sh))
 ```
 
 You can pm me in telegram: @Chera_Dasham
